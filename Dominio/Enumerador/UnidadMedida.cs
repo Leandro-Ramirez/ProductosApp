@@ -1,6 +1,8 @@
-﻿using System;
+﻿#region Usos
+using System;
 using System.Text;
 using System.Collections.Generic;
+#endregion
 
 namespace Dominio.Enumerador
 {

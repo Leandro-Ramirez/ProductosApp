@@ -1,8 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿#region Usos
+using System;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading.Tasks;
+using ProductoApp.Formularios;
+using System.Collections.Generic;
+#endregion
 
 namespace ProductoApp
 {

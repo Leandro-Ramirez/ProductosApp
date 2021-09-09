@@ -82,6 +82,24 @@ namespace Infraestructura.Productos
             }
             return tmp;
         }
+        public Producto[] ObtenerProductoVencimiento(DateTime dt)
+        {
+            Producto[] tmp = null;
+            if (productos == null)
+            {
+                return tmp;
+            }
+            foreach (Producto p in productos)
+            {
+                if (p.FechaVencimiento.CompareTo(dt)<=0)
+                {
+                    Añadir(p, ref tmp);
+                }
+            }
+            return tmp;
+        }
+        //public void 
+        //Falta
         #endregion
         #region Metodo Privado
         private void Añadir(Producto p, ref Producto[] pds)
